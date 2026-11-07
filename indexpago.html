@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Diseñada con Propósito</title>
+<meta name="description" content="Taller de automaquillaje y propósito con Dios en el centro. Sábado 28 de noviembre, 11:00 am, Dubai. 150 AED con almuerzo incluido.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap">
+<style>
+/* Una columna estrecha y centrada, fondo claro, un solo acento rosa para el botón de pago */
+:root{
+  --bg:#FCEEF3; --ink:#111111; --soft:#4A4446; --line:#F0D3DE;
+  --accent:#E8729A; --accent-soft:#FFFFFF; --blue:#A8D4E8;
+  --display:'Playfair Display', Georgia, 'Times New Roman', serif; --deep:#B8436C;
+  --italic:'Playfair Display', Georgia, serif;
+  --body:'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.stripe{height:6px;background:linear-gradient(90deg,#F2A7C3,var(--blue))}
+.wrap{max-width:680px;margin:0 auto;padding-left:max(20px, env(safe-area-inset-left, 0px));padding-right:max(20px, env(safe-area-inset-right, 0px))}
+section{padding-block:56px;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h1,h2{font-family:var(--display);font-weight:600;line-height:1.05;margin:0;text-wrap:balance}
+h1{font-size:clamp(44px, 11vw, 68px);font-weight:500;letter-spacing:-1px;line-height:1.02}
+h1 em{font-style:italic;font-weight:400;color:var(--deep);display:block}
+h2{font-weight:500}
+h2{font-size:clamp(32px, 7vw, 42px)}
+p{margin:0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--soft)}
+.lead{font-family:var(--italic);font-style:italic;font-size:22px;line-height:1.45}
+
+/* Encabezado */
+.hero{display:grid;gap:22px;padding-top:40px}
+.hero-photo{border-radius:20px;overflow:hidden;aspect-ratio:4/5;max-height:520px}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.facts{display:flex;flex-wrap:wrap;gap:8px 18px;font-weight:500}
+.facts span{white-space:nowrap}
+.price{font-family:var(--display);font-size:34px;font-weight:600;line-height:1}
+.price small{font-family:var(--body);font-size:16px;font-weight:400;color:var(--soft)}
+
+/* Botón de pago: la única acción de la página */
+.btn{display:flex;align-items:center;justify-content:center;min-height:56px;width:100%;padding:14px 24px;border-radius:999px;background:var(--accent);color:var(--ink);font-family:var(--body);font-size:18px;font-weight:700;text-decoration:none;transition:transform .15s ease, background .15s ease}
+.btn:hover{background:#E05F8B}
+.btn:active{transform:scale(.98)}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.secure{font-size:14px;color:var(--soft);text-align:center;margin-top:10px}
+
+/* Qué vas a vivir */
+.list{display:grid;gap:22px;margin-top:28px;padding:0;list-style:none}
+.list li{display:grid;grid-template-columns:28px 1fr;gap:14px;align-items:start}
+.dot{width:12px;height:12px;border-radius:50%;background:var(--accent);margin-top:9px;justify-self:center}
+.list b{display:block;font-size:19px}
+.list p{color:var(--soft)}
+.gallery{margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.gallery figure{margin:0;border-radius:16px;overflow:hidden;aspect-ratio:1/1}
+.gallery .g-main{grid-column:1 / -1;aspect-ratio:16/10}
+.gallery img{width:100%;height:100%;object-fit:cover}
+
+/* Quién te acompaña */
+.about{display:grid;gap:24px;margin-top:24px}
+.about-photo{border-radius:20px;overflow:hidden;aspect-ratio:3/4;max-width:340px}
+.about-photo img{width:100%;height:100%;object-fit:cover}
+@media (min-width:620px){
+  .about{grid-template-columns:240px 1fr;align-items:center}
+}
+
+/* Detalles */
+.details{margin-top:24px;background:var(--accent-soft);border-radius:20px;padding:8px 22px}
+.details div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding-block:14px;border-bottom:1px solid #F6DDE6}
+.details div:last-child{border-bottom:0}
+.details dt{font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--soft);padding-top:3px}
+.details dd{margin:0;font-weight:500}
+
+.final{text-align:center;display:grid;gap:20px}
+footer{padding-block:28px 40px;text-align:center;font-size:14px;color:var(--soft)}
+
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<div class="stripe" aria-hidden="true"></div>
+<main class="wrap">
+
+  <section class="hero">
+    <span class="eyebrow">Sábado 28 de noviembre · Dubai</span>
+    <h1>Diseñada con <em>Propósito</em></h1>
+    <p class="lead">Un espacio para conectar con tu espiritualidad y con tu feminidad.</p>
+    <p>Taller práctico de automaquillaje, donde te maquillas en vivo, + propósito con Dios en el centro de tu vida.</p>
+    <div class="hero-photo"><img src="img/mesa-espejos-filtro.jpg" alt="Mujeres sentadas en una mesa rosada con espejos durante un taller anterior" width="812" height="980"></div>
+    <div class="facts"><span>Sábado 28 de noviembre</span><span>11:00 am</span><span>Ramee Dream Hotel, Business Bay</span></div>
+    <p class="price">150 AED <small>por persona</small></p>
+    <div>
+      <a class="btn" href="https://pay.ziina.com/juanitamontoyar/QqKmQxl8-?source=app" rel="noopener">Reservar mi cupo</a>
+      <p class="secure">Pago seguro. Al hacer clic irás a la página de pago.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Lo que vas a vivir</span>
+    <h2 style="margin-top:10px">Un sábado para ti</h2>
+    <ul class="list">
+      <li><span class="dot" aria-hidden="true"></span><div><b>Taller práctico de automaquillaje, en vivo</b><p>Aprende mis mejores tips y ponlos en práctica ese mismo día: durante el taller te maquillas tú misma, paso a paso, con mi guía.</p></div></li>
+      <li><span class="dot" aria-hidden="true"></span><div><b>Propósito con Dios en el centro</b><p>Conecta con tu espiritualidad y con lo que Dios tiene para tu vida.</p></div></li>
+      <li><span class="dot" aria-hidden="true"></span><div><b>Almuerzo en compañía de mujeres maravillosas</b></div></li>
+      <li><span class="dot" aria-hidden="true"></span><div><b>Regalos y sorpresas</b></div></li>
+    </ul>
+    <div class="gallery">
+      <figure class="g-main"><img src="img/grupo-crystal.jpg" alt="Grupo de mujeres en un taller anterior, con mesa rosada y espejos" width="1290" height="952" loading="lazy"></figure>
+      <figure><img src="img/demo-crystal.jpg" alt="Juanita explicando una técnica de maquillaje en un taller" width="787" height="1400" loading="lazy" style="object-position:center 40%"></figure>
+      <figure><img src="img/grupo-hotel.jpg" alt="Mujeres de la comunidad en un encuentro anterior" width="1400" height="934" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Quién te acompaña</span>
+    <div class="about">
+      <div class="about-photo"><img src="img/maquillando.jpg" alt="Juanita maquillando a una clienta" width="933" height="1400" loading="lazy"></div>
+      <div style="display:grid;gap:14px">
+        <h2>Juanita Montoya</h2>
+        <p style="font-weight:500">Maquilladora profesional · Creadora de contenido · Mentora en marca personal · Creadora de comunidad</p>
+        <p>Llevo más de 8 años maquillando y he trabajado en Colombia y en Emiratos Árabes Unidos. Como creadora de contenido y mentora en marca personal, acompaño a mujeres a descubrir su propósito y a mostrarse con seguridad. En Dubái creé una comunidad de mujeres latinas donde nos conectamos, aprendemos y crecemos juntas, con Dios en el centro.</p>
+        <p>En este taller te comparto mis mejores tips y los practicamos juntas en vivo, para que te veas y te sientas como la mujer que Dios creó.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Detalles del evento</span>
+    <dl class="details">
+      <div><dt>Fecha</dt><dd>Sábado 28 de noviembre de 2026</dd></div>
+      <div><dt>Hora</dt><dd>11:00 am</dd></div>
+      <div><dt>Lugar</dt><dd>Ramee Dream Hotel, Business Bay, Dubai</dd></div>
+      <div><dt>Incluye</dt><dd>Taller práctico de automaquillaje en vivo, charla de propósito, almuerzo, regalos y sorpresas</dd></div>
+      <div><dt>Idioma</dt><dd>Español</dd></div>
+      <div><dt>Inversión</dt><dd>150 AED por persona</dd></div>
+    </dl>
+  </section>
+
+  <section class="final" id="reservar">
+    <h2>Te esperamos para vivir un sábado diferente</h2>
+    <p>Reserva tu cupo aquí.</p>
+    <div>
+      <a class="btn" href="https://pay.ziina.com/juanitamontoyar/QqKmQxl8-?source=app" rel="noopener">Reservar mi cupo · 150 AED</a>
+      <p class="secure">Pago seguro. Al hacer clic irás a la página de pago.</p>
+    </div>
+  </section>
+
+</main>
+<footer class="wrap">Juanita Montoya · @juanitamontoya</footer>
+
+</body>
+</html>
